@@ -24,6 +24,10 @@ Tim is writing a debugger in Rust, and he uses [rust-sitter](https://github.com/
 
 * https://eli.thegreenplace.net/tag/debuggers
 
+* [LLDB Mac quick start](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/gdb_to_lldb_transition_guide/document/lldb-terminal-workflow-tutorial.html)
+
+* [ARM debugger](https://developer.arm.com/documentation/101469/2023-0/Introduction-to-Arm-Debugger)
+
 * JS react debugger
 
 
