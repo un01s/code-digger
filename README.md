@@ -1,6 +1,6 @@
 # code-digger
 
-Dig the code to crack it open
+Code has a hidden universe, and you have to dig it to crack it open.
 
 ## write a debugger to understand how debugger works
 
