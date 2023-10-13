@@ -32,6 +32,8 @@ Tim is writing a debugger in Rust, and he uses [rust-sitter](https://github.com/
 
 * JS react debugger
 
+* [blink emulator](https://github.com/jart/blink)
+
 ## assembly languages and other programming languages
 
 Understanding asssembly language is essential to understanding how things really work. Complex or unfamiliar language features, undefined behavior, or simply poorly written code can be difficult to understand to see what's really going on. But the assembly code will always tell you the truth.
