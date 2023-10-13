@@ -30,5 +30,27 @@ Tim is writing a debugger in Rust, and he uses [rust-sitter](https://github.com/
 
 * JS react debugger
 
+## assembly languages and other programming languages
+
+Understanding asssembly language is essential to understanding how things really work. Complex or unfamiliar language features, undefined behavior, or simply poorly written code can be difficult to understand to see what's really going on. But the assembly code will always tell you the truth.
+
+### x86 assembly: Intel vs. AT&T syntax flavors
+
+```assembly
+# intel syntax
+add eax, 4
+
+# AT&T syntax
+addl $4, %eax
+
+# -M intel for Intel syntax
+objdump -d -M intel ./a.out
+```
+
+Besides the order being swapped, constants also get prefixed with ```$```, and registers are prefixed with ```%```. Some mnemonics also have a letter appended to indicate the size of the operands, such as ```l``` for 32-bit operands.
+
+### ARM assembly
+
+### RISC-V assembly
 
 
