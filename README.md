@@ -4,7 +4,7 @@ Code has a hidden universe, and you have to dig it to crack it open. Usually the
 
 ## write a debugger to understand how debugger works
 
-Tim is writing a debugger in Rust, and he uses [rust-sitter] as a parser. This rust-sitter is based on another project, [tree-sitter](https://tree-sitter.github.io/tree-sitter/). This tree-sitter is a tool for generating fast, incremental parsers.
+Tim is writing a debugger in Rust, and he uses [rust-sitter](https://github.com/hydro-project/rust-sitter) as a parser. This rust-sitter is based on another project, [tree-sitter](https://tree-sitter.github.io/tree-sitter/). This tree-sitter is a tool for generating fast, incremental parsers.
 
 * [how debugger works](https://www.debuggingbook.org/html/Debugger.html)
 
