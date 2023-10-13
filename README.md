@@ -12,7 +12,7 @@ Tim is writing a debugger in Rust, and he uses [rust-sitter](https://github.com/
 
 * [learn rust](https://www.rust-lang.org/learn)
 
-* [python debugger from scratch in python](https://github.com/parttimenerd/python-dbg/)
+* [python debugger from scratch in python](https://github.com/parttimenerd/python-dbg/), [blog post](https://mostlynerdless.de/blog/2023/09/20/lets-create-a-python-debugger-together-part-1/)
 
 * [debugger for windows in C](https://ja.nsommer.dk/articles/x86-debugger-for-windows-and-wine.html)
 
@@ -53,4 +53,7 @@ Besides the order being swapped, constants also get prefixed with ```$```, and r
 
 ### RISC-V assembly
 
+* [Godbolt compiler explorer](https://godbolt.org/)
+
+* [Intel software developer manuals: SDM](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
 
