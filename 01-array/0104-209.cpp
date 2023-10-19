@@ -20,7 +20,13 @@ public:
             sum += nums[j]; // get one element in by the for-loop
             while (sum >= target) {
                 width = j-i+1;
-                res = res < width ? res : width;
+
+                // this is OK
+                //res = res < width ? res : width;
+
+                // this is clear
+                res = min(res, width);
+
                 sum -= nums[i++]; // remove the starting element in the window
             }
         }
