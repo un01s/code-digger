@@ -1,3 +1,4 @@
 # macOS executable
 *.out
 *.swp
+.DS_Store

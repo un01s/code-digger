@@ -61,3 +61,7 @@ Besides the order being swapped, constants also get prefixed with ```$```, and r
 
 * [Intel software developer manuals: SDM](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
 
+### C++
+
+* [modern c++ tutorial](https://github.com/changkun/modern-cpp-tutorial)
+
