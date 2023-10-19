@@ -11,6 +11,9 @@
  * i is the starting point, j is the ending point,
  * moving j always
  * shrinking the window by moving i
+ *
+ * i = left, j = right
+ * [left, right]
  * 
  */
 
