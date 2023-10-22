@@ -66,3 +66,64 @@ public:
         return res;
     }
 };
+
+//
+// use a directional array to control each side, four sides = one loop
+//
+class Solution {
+public:
+    // four directions:
+    const int dir[4][2] = { {0,1},{1,0},{0,-1},{-1,0} };
+    // after four directions are used, one loop completes
+
+    vector<vector<int>> generateMatrix(int n) {
+        vector<vector<int>> res(n,vector<int>(n,0));
+        for(int i = 1, x = 0, y = 0, d = 0; i <= n * n; i++){
+            res[x][y] = i;
+            int t_x = x + dir[d][0];
+            int t_y = y + dir[d][1];
+            if(t_x < 0 || t_x >= n || t_y < 0 || t_y >= n || res[t_x][t_y] != 0){
+                d = (d + 1) % 4;
+                t_x = x + dir[d][0],t_y = y + dir[d][1];
+            }
+            x = t_x, y = t_y;
+        }
+        return res;    
+    }
+};
+
+//
+// recursive
+// use both top-left corner and bottom-right corner to construct the loop
+//
+class Solution {
+public:
+    /*
+        (x1, y1) -------------
+            |                |
+            |                |
+            |                |
+            | ------------(x2, y2)
+
+     */
+    void loop(int x1, int y1, int x2, int y2, int start, vector<vector<int> >& res) {
+        if (x2 < x1 || y2 < y1) return;
+        if (x1 == x2) {
+            res[x1][y1] = start;
+            return;
+        }
+        int val = start;
+        for (int i = y1; i < y2; i++) res[x1][i] = val++;
+        for (int i = x1; i < x2; i++) res[i][x2] = val++;
+        for (int i = y2; i > y1; i--) res[x2][i] = val++;
+        for (int i = x2; i > x1; i--) res[i][y1] = val++;
+
+        loop(x1+1, y1+1, x2-1, y2-1, val, res);
+    }
+
+    vector<vector<int>> generateMatrix(int n) {
+        vector<vector<int>> res(n,vector<int>(n,0));
+        loop(0, 0, n-1, n-1, 1, res);
+        return res;    
+    }
+}; 
