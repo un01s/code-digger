@@ -30,22 +30,3 @@ class Solution:
             l += 1
         return res
 
-##
-# recursive
-#
-
-class Solution:
-    def generateMatrix(self, n: int) -> List[List[int]]:
-        if n == 0:
-            return []
-        if n == 1:
-            return [[1]]
-        border = [i for i in range(1, 4*(n-1)+1)] # outer 
-        inner = self.generateMatrix(n-2) # inner
-        res = [border[:n]] + inner;
-        for i in range(1, n-1):
-            t = [j+len(border) for j in res[i]]
-            res[i] = [border[-1]]+t+[border[n+i-1]]
-        res.append(border[2*n-2:3*n-2][::-1])
-        return res
-
