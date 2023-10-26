@@ -74,6 +74,10 @@ public:
         _size--;
     }
 
+    int len() {
+        return _size;
+    }
+
     void printList() {
         LinkedNode* cur = _dummyHead;
         while (cur->next != nullptr) {
