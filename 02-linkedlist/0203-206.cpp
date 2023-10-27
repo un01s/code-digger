@@ -2,7 +2,7 @@
  * leetcode 206
  * reverse linked list
  *
- * double-pointer
+ * double-pointer: pre and cur
  *
  */
 
